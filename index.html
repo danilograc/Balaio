@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>projeto3-driveneats</title>
+
+</head>
+
+<body>
+ <div class="barra-topo">
+     <h2>Balaio de gatos</h2>
+     <h3>Seu caderno do seu jeito!</h3>
+ </div>
+
+ <div class="container">
+     <div onclick="fecharpedido()" class="fecharpedido esconder">
+        <h2>Confirme seu pedido</h2>
+         <div class="tamanhoconfirmado">
+             <h2></h2>
+         </div>
+         <div class="pautaconfirmada">
+            <h2></h2>
+         </div>
+         <div class="folhasconfirmado">
+            <h2></h2>
+         </div>
+         <div class="valortotal">
+            <h2></h2>
+         </div>
+         <div onclick="fechar()" class="confirme">
+            <h1>Tudo certo, pode pedir!</h1>
+        </a>
+         </div>
+         <div onclick="cancelar()" class="cancela">
+            <h1>Cancelar</h1>
+         </div>
+
+
+     </div>
+     <h1>Escolha o tamanho</h1>
+     <div class="caixa">
+         <div onclick="selecionar(this)" class="tamanho">
+             <img src="/images/Lamem.jpg">
+             <h2>Lamem tradicional</h2>
+             <div class="descricao">
+                <h4>Macarrão</h4>
+                <h4>Carne e ovo</h4>
+            </div>
+             <h3>R$ 14,90</h3>
+             <ion-icon name="checkmark-circle"></ion-icon>
+         </div>
+         <div onclick="selecionar(this)" class="tamanho">
+            <img src="/images/Lamem.jpg">
+            <h2>Lamem tradicional</h2>
+            <div class="descricao">
+               <h4>Macarrão</h4>
+               <h4>Carne e ovo</h4>
+           </div>
+            <h3>R$ 14,90</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+     </div>
+
+     <h1>Agora, sua pauta</h1>
+     <div class="caixa">
+         <div onclick="selecionarpauta(this)" class="pauta">
+             <img src="/projeto3-driveneats/images/Coca.jpg">
+             <h2>Coquinha gelada</h2>
+             <div class="descricao">
+                <h4>Lata 350ml</h4>
+                <h4></h4>
+            </div>
+             <h3>R$ 4,90</h3>
+             <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div onclick="selecionarpauta(this)" class="pauta">
+            <img src="/projeto3-driveneats/images/Coca.jpg">
+            <h2>Coquinha gelada</h2>
+            <div class="descricao">
+               <h4>Lata 350ml</h4>
+               <h4></h4>
+           </div>
+            <h3>R$ 4,90</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
+       </div>
+       <div onclick="selecionarpauta(this)" class="pauta">
+        <img src="/projeto3-driveneats/images/Coca.jpg">
+        <h2>Coquinha gelada</h2>
+        <div class="descricao">
+           <h4>Lata 350ml</h4>
+           <h4></h4>
+       </div>
+        <h3>R$ 4,90</h3>
+        <ion-icon name="checkmark-circle"></ion-icon>
+   </div>
+     </div>
+
+     <h1>Por fim, a quantidade de páginas</h1>
+     <div class="caixa">
+        <div onclick="selecionarfolhas(this)" class="folhas">
+            <img src="/projeto3-driveneats/images/Ichigo-Daifuku.jpg">
+            <h2>Ichigo Daifuku</h2>
+            <div class="descricao">
+                <h4>Docinho</h4>
+                <h4>Morango</h4>
+            </div>
+            <h3>R$ 7,50</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div onclick="selecionarfolhas(this)" class="folhas">
+            <img src="/projeto3-driveneats/images/Ichigo-Daifuku.jpg">
+            <h2>Ichigo Daifuku</h2>
+            <div class="descricao">
+                <h4>Docinho</h4>
+                <h4>Morango</h4>
+            </div>
+            <h3>R$ 7,50</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div onclick="selecionarfolhas(this)" class="folhas">
+            <img src="/projeto3-driveneats/images/Ichigo-Daifuku.jpg">
+            <h2>Ichigo Daifuku</h2>
+            <div class="descricao">
+                <h4>Docinho</h4>
+                <h4>Morango</h4>
+            </div>
+            <h3>R$ 7,50</h3>
+            <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+     </div>
+ </div>
+
+ <div class="barra-baixo">
+     <div class="botao1">
+        <h3>Selecione os 3 itens para fechar o pedido</h3>
+    </div>
+    <div onclick="fecharpedido()" class="botao2 esconder">
+        <h3>Fechar pedido</h3>
+    </div>
+ </div>
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>

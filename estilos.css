@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+ion-icon {
+    display: none;
+}
+body {
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.barra-topo{
+    width: 414px;
+    height: 92px;
+    background-color: #50D074;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.barra-topo > h2 {
+    font-size: 44px;
+    color: #FFFFFF;
+    font-family: "Righteous";
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+}
+.barra-topo > h3 {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.container {
+    margin-top: 123px;
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+}
+.container > h1 {
+    margin-bottom: 17px;
+    font-size: 26px;
+    font-size: 400;
+    margin-left: 20px;
+}
+.fecharpedido {
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    z-index: 2;
+}
+.fecharpedido > h3 {
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.fecharpedido > h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.tamanhoconfirmado > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.pautaconfirmada > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.folhasconfirmado > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.valortotal > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.confirme {
+    width: 329px;
+    height: 52px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirme > h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+}
+.cancela {
+    width: 329px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cancela > h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.caixa {
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 95px;
+    margin-left: 20px;
+}
+.caixa::-webkit-scrollbar{
+    display: none;
+}
+.tamanho {
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 16px;
+    border-radius: 9px;
+}
+.tamanho > img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+}
+.tamanho > h2 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    left: 14px;
+    bottom: 80px;
+}
+.descricao {
+    position: absolute;
+    left: 14px;
+    bottom: 37px;
+}
+.descricao > h4 {
+    font-size: 15px;
+    color: #A6A6A6;
+    font-weight: 300;
+}
+.tamanho > h3 {
+    position: absolute;
+    left: 14px;
+    bottom: 13px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+.pauta {
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 16px;
+    border-radius: 9px;
+}
+.pauta > img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+}
+.pauta > h2 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    left: 14px;
+    bottom: 80px;
+}
+.pauta > h3 {
+    position: absolute;
+    left: 14px;
+    bottom: 13px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+.folhas {
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 16px;
+    border-radius: 9px;
+}
+.folhas > img {
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+}
+.folhas > h2 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    left: 14px;
+    bottom: 80px;
+}
+.folhas > h3 {
+    position: absolute;
+    left: 14px;
+    bottom: 13px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+.barra-baixo {
+    width: 414px;
+    height: 92px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.botao1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A6A6A6;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+}
+.botao1 > h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.botao2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #32B72F;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+}
+.botao2 > h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.selecionar {
+    border: 5px solid #32B72F;
+}
+.selecionar > ion-icon {
+    display: initial;
+    color: #32B72F;
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+}
+.selecionarpauta {
+    border: 5px solid #32B72F;
+}
+.selecionarpauta > ion-icon {
+    display: initial;
+    color: #32B72F;
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+}
+.selecionarfolhas {
+    border: 5px solid #32B72F;
+}
+.selecionarfolhas > ion-icon {
+    display: initial;
+    color: #32B72F;
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+}
+.esconder {
+    display: none;
+}
